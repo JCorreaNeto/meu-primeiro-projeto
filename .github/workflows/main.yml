@@ -1,0 +1,17 @@
+.github/workflows/main.yml
+name: Teste automático de IA
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  exemplo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v3
+
+      - name: Exemplo de comando
+        run: echo "Olá, João! O GitHub Actions está funcionando 🎉"
